@@ -1,0 +1,2 @@
+# kitbase
+Wordpress theme  create
