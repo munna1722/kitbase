@@ -77,12 +77,17 @@ body {
     background: #16a085;
 }
 
-.kitbase-nav-menu{
-    float: left;
+#header_area .col-md-9{
+    text-align: right;
+    display: flex;
 }
-.kitbase-header-btn{
-    float: right;
+
+#header_area .col-md-9 .kitbase-nav-menu{
+   width: 80%;
 }
+#header_area .col-md-9 .kitbase-header-btn{
+    width: 20%;
+ }
 /*Menu position option*/
 
 /* left menu position */
@@ -105,14 +110,10 @@ body {
     height: 60px;
 }
 #header_area.center_menu .row .col-md-9{
-    width: 100% ;
-    float: unset;
-    
+    width: 100% ; 
 }
 #header_area.center_menu .row .col-md-9 .kitbase-nav-menu{
-    
-    float: unset;
-    
+    width: 100% ; 
 }
 #header_area.center_menu .kitbase-header-btn{
     display: none;
