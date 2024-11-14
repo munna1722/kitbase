@@ -73,6 +73,34 @@ function kitbase_customizer_register($wp_customize) {
      'section' => 'kitbase_header_area',
      'type'    => 'uri',
    ));
+
+   // menu position
+   
+
+   $wp_customize->add_section('kitbase_menu_option', array(
+    'title'       => __('Menu Position Option', 'kitbase'),
+    'description' => 'Select the position of the menu in the header.',
+));
+
+// Menu Position Setting
+$wp_customize->add_setting('kitbase_menu_option', array(
+    'default'           => 'right_menu',
+    'sanitize_callback' => 'sanitize_text_field', // Ensures the input is sanitized
+));
+
+// Menu Position Control
+$wp_customize->add_control('kitbase_menu_option', array(
+    'label'       => 'Menu Position',
+    'description' => 'Select Your Menu Position',
+    'section'     => 'kitbase_menu_option',
+    'type'        => 'radio',
+    'choices'     => array(
+        'left_menu'  => 'Left Menu',
+        'right_menu' => 'Right Menu',
+        'center_menu'=> 'Center Menu'
+    ),
+));
+
  
 }
 

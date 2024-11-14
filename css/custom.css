@@ -76,3 +76,47 @@ body {
 #header_area .btn:hover{
     background: #16a085;
 }
+
+.kitbase-nav-menu{
+    float: left;
+}
+.kitbase-header-btn{
+    float: right;
+}
+/*Menu position option*/
+
+/* left menu position */
+#header_area.left_menu .row .col-md-3{
+    order:2;
+}
+#header_area.left_menu .row .col-md-9{
+    order:1;
+}
+#header_area.left_menu .row .kitbase-header-btn{
+   display: none;
+} 
+
+/* center menu position*/
+#header_area.center_menu .row .col-md-3{
+    width: 100%;
+    text-align: center;
+}
+#header_area.center_menu .row .col-md-3 img{
+    height: 60px;
+}
+#header_area.center_menu .row .col-md-9{
+    width: 100% ;
+    float: unset;
+    
+}
+#header_area.center_menu .row .col-md-9 .kitbase-nav-menu{
+    
+    float: unset;
+    
+}
+#header_area.center_menu .kitbase-header-btn{
+    display: none;
+ } 
+ #header_area.center_menu{
+    line-height: 50px;
+ }
