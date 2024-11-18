@@ -19,7 +19,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-3">
-              <a href=""><img src="<?php echo get_theme_mod('kitbase_logo');?>" alt=""></a>
+              <a href="<?php echo home_url(); ?>"><img src="<?php echo get_theme_mod('kitbase_logo');?>" alt=""></a>
           </div>
           <div class="col-md-9">
             <div class="kitbase-nav-menu">
@@ -35,6 +35,17 @@
       </div>
     </div>
     
+    <section>
+      <div id="id">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <?php the_content(); ?>
+            </div>
+          </div>
+        </div>
+      </div>
+    </sicetion>  
   <?php wp_footer();?>
   </body>
 </html>

@@ -27,6 +27,8 @@ function kit_css_js_calling() {
 add_action('wp_enqueue_scripts', 'kit_css_js_calling' );
 
 //Theme Function
+//menu register
+register_nav_menu( 'main_menu', __('Main Menu', 'kitbase') );
 //add logo
 function kitbase_customizer_register($wp_customize) {
   $wp_customize->add_section('kitbase_header_area', array(
@@ -95,6 +97,7 @@ $wp_customize->add_control('kitbase_menu_option', array(
     'section'     => 'kitbase_menu_option',
     'type'        => 'radio',
     'choices'     => array(
+        'default'    =>  'Default Menu',
         'left_menu'  => 'Left Menu',
         'right_menu' => 'Right Menu',
         'center_menu'=> 'Center Menu'
@@ -105,4 +108,24 @@ $wp_customize->add_control('kitbase_menu_option', array(
 }
 
 add_action('customize_register', 'kitbase_customizer_register');
+
+
+//walker Menu Position
+function kitbase_nav_description( $item_output, $item, $args ) {
+  if ( ! empty( $item->description ) ) {
+      $item_output = str_replace(
+          '</a>',
+          '<span class="walker_nav">' . $item->description . '</span></a>',
+          $item_output
+      );
+  }
+  return $item_output;
+}
+add_filter( 'nav_menu_item_output', 'kitbase_nav_description', 10, 3 );
+
+
+
 ?>
+
+
+

@@ -28,7 +28,7 @@ body {
     padding: 15px 0;
     color:#ffffff;
     justify-content: center;
-    line-height: 80px;
+    line-height: 70px;
   }
   
 
@@ -39,15 +39,18 @@ body {
 
 /*menu styling*/
 
-#nav ul{
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+#nav .kitbase-nav-menu ul{
+    
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
-#nav li{
-    margin: 0 15px;
+.kitbase-nav-menu{
+    text-align: center;
+}
+ 
+li {
+    display: inline-block;
 }
 
 #nav a{
@@ -88,9 +91,11 @@ body {
 #header_area .col-md-9 .kitbase-header-btn{
     width: 20%;
  }
+
 /*Menu position option*/
 
 /* left menu position */
+
 #header_area.left_menu .row .col-md-3{
     order:2;
 }
@@ -102,6 +107,8 @@ body {
 } 
 
 /* center menu position*/
+
+
 #header_area.center_menu .row .col-md-3{
     width: 100%;
     text-align: center;
@@ -120,4 +127,14 @@ body {
  } 
  #header_area.center_menu{
     line-height: 50px;
+ }
+
+ /* right menu position */
+
+ #header_area.right_menu .kitbase-header-btn{
+    display: none;
+ }
+ #header_area.right_menu .kitbase-nav-menu{
+    text-align: right;
+    width: 100%;
  }
