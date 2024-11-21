@@ -18,6 +18,26 @@ body {
    height: 0 auto;
   }
   
+
+/* theme layout  */
+
+.col-md-12 {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.col-md-9 {
+    float: left;
+    width: 75%;
+}
+
+.col-md-3 {
+    float: right;
+    width: 25%;
+}
+
+
+
   /*=======================================
    Header Area Style
   ========================================*/
@@ -151,12 +171,103 @@ li {
 
  /*   mobile menu   .............*/
 
-
  .kitbase-nav-menu .mobile-menu{
     display: none;
  }
 
+ /*=======================================
+ Index Page Style
+========================================*/
+#body_area {
+    padding: 45px 0; 
+  }
+  #body_area .blog_area {
+    width: 100%;
+    margin-bottom: 15px; 
+  }
+  #body_area .post_thumb {
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  #body_area .post_thumb img {
+    transition: 0.5s;
+    width: 100%;
+    display: block;
+  }
+  #body_area .post_thumb:hover img {
+    transform: scale(1.1);
+  }
+  #body_area .post_details {
+    width: 100%;
+  }
+  #body_area .post_details h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+  }
+  #body_area .post_details h2 a {
+    color: #262626;
+    text-decoration: none;
+    transition: 0.5s;
+  }
+  #body_area .post_details h2 a:hover {
+    color: #2c3e50;
+  }
 
+  /* page button css */
+
+  a.redmore {
+    background: #1abc9c;
+    padding: 15px 40px;
+    border-radius: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+}
+a.redmore:hover{
+    background: #77dbd6;
+    color: #262626
+}
+.post_details p {
+    margin-top: 30px;
+    margin-bottom: 1rem;
+}
+
+/* pagenav css here */
+
+.wp_pagenav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.wp_pagenav ul li {
+    display: inline-block;
+}
+
+.wp_pagenav ul li a,
+.wp_pagenav ul li span {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    color: #0073aa;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.wp_pagenav ul li a:hover {
+    background-color: #0073aa;
+    color: #fff;
+    border-color: #0073aa;
+}
+
+.wp_pagenav ul li span {
+    background-color: #f7f7f7;
+    color: #aaa;
+}
 
 
  /* General Styles (Default: Desktop View) */

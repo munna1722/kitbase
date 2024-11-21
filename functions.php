@@ -20,7 +20,12 @@ include_once('inc/theme_function.php');
 //menu register
 include_once('inc/menu_register.php');
 
+//sidebar register
+include_once('inc/sidebar.php');
 
+
+//theme layout Register
+include_once('inc/theme-layout.php');
 
 
 
