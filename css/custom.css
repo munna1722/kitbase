@@ -4,6 +4,9 @@
 body {
     font-family: "Kaisei Decol", serif;
   }
+  a {
+    text-decoration: none;
+}
   h1,
   h2,
   h3,
@@ -87,18 +90,7 @@ li {
 .col-md-2 {
     text-align: right;
 }
-#header_area .btn{
-    background: #1abc9c;
-    color: #ffffff;
-    padding: 10px 28px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: background-color 0.3s;
-}
-#header_area .btn:hover{
-    background: #16a085;
-}
+
 
 #header_area .col-md-9{
     text-align: right;
@@ -175,7 +167,7 @@ li {
   }
   #body_area .blog_area {
     width: 100%;
-    margin-bottom: 15px; 
+    margin-bottom: 80px; 
   }
   #body_area .post_thumb {
     overflow: hidden;
@@ -207,8 +199,27 @@ li {
     color: #2c3e50;
   }
 
-  /* page button css */
+  /* ====== page button css ====== */
 
+
+  /* header btn css */
+  #header_area .btn{
+    background: #1abc9c;
+    color: #ffffff;
+    padding: 10px 28px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    border: none;
+}
+
+#header_area .btn:hover{
+    background: #16a085;
+}
+
+
+/* page button css */
   a.redmore {
     background: #1abc9c;
     padding: 15px 40px;
@@ -216,14 +227,16 @@ li {
     color: #ffffff;
     text-decoration: none;
     font-size: 16px;
+    border: none;
 }
 a.redmore:hover{
     background: #77dbd6;
     color: #262626
 }
+
 .post_details p {
     margin-top: 30px;
-    margin-bottom: 1rem;
+    margin-bottom: 30px;
 }
 
 /* pagenav css here */
@@ -260,6 +273,24 @@ a.redmore:hover{
     background-color: #f7f7f7;
     color: #aaa;
 }
+
+
+
+/* blog page css */
+
+
+.post-details p {
+  
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
 
 
 /* footer area css */
