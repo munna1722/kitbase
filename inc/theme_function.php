@@ -100,7 +100,9 @@ $wp_customize->add_control('kitbase_copyright_section', array(
  
 ));
 
+// color option
 
+ 
  
 }
 

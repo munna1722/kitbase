@@ -28,7 +28,11 @@ include_once('inc/sidebar.php');
 include_once('inc/theme-layout.php');
 
 
+//theme layout Register
+include_once('inc/footer-widget.php');
 
+//theme layout Register
+include_once('inc/theme-color.php');
 ?>
 
 

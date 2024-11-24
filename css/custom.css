@@ -159,15 +159,7 @@ li {
     width: 100%;
  }
 
- #copyright_area{
-    background:#2c3e50;
-    padding: 15px 0;
-    color:#ffffff;
-    justify-content: center;
-    height: 70px;
-    line-height: 42px;
-    text-align: center;
- }
+
 
  /*   mobile menu   .............*/
 
@@ -270,13 +262,87 @@ a.redmore:hover{
 }
 
 
- /* General Styles (Default: Desktop View) */
-/* These styles are already applied for desktop in your code */
+/* footer area css */
+
+.footer-area{
+background: #2c3e50;
+color:#ffffff;
+padding-top:50px;
+padding-bottom:40px;
+}
+
+
+#copyright_area{
+    background:#000000;
+    padding: 15px 0;
+    color:#ffffff;
+    justify-content: center;
+    height: 50px;
+    line-height: 25px;
+    text-align: center;
+ }
+
+
+ .footer-area li {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer-area li a {
+    color:#ffffff;
+    text-decoration: none;
+}
+.footer-area li a:hover {
+    color:#15e3eb;
+    
+}
+
+.footer-area ul#menu-main-1 {
+   margin: 0;
+   padding: 0;
+     
+} 
+.footer-area ul#menu-main {
+    padding: 0;
+}
+
+.footer-area ul#menu-sub-menu-1 {
+    padding: 0;
+}
+.footer-area ol.wp-block-list {
+    padding: 0;
+}
+
+.footer-widget.footer-3 {
+    padding: 0;
+    margin: 0;
+}
+
+.footer-area li {
+    display: block;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*=======================================
  Responsive Design
-========================================*/
-
+=======================================
 /* Tablet View (768px to 991px) */
 @media (max-width: 991px) {
     #header_area .col-md-3 {
