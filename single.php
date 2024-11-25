@@ -15,7 +15,10 @@
                   while (have_posts()) : the_post();
               ?>
                 <div class="blog_area">
+                  <h1><?php the_title()?></h1>
                   <?php the_content(); ?>
+                  <?php the_excerpt(); ?>
+                  <?php the_author_description(); ?>
                 </div>
               <?php
                   endwhile;
@@ -28,6 +31,7 @@
             <div class="col-md-9">
 
                <?php get_template_part( 'template_part/blog' ); ?>
+
                 <div id="comments_area">
                     <?php comments_template( ); ?>
                </div>
@@ -43,23 +47,7 @@
               ?>
             </div>
           <?php endif; ?>
-
-          <div class="pagenav">
-            <?php
-              if (have_posts()) :
-                  while (have_posts()) : the_post();
-                      // Your loop content here
-                  endwhile;
-
-                  // Display pagination
-                  kitbase_pagenav();
-
-              else :
-                  echo '<p>No posts found.</p>';
-              endif;
-            ?>  
-         </div> 
-      </div>
+            
     </div>
   </div>
 </section>

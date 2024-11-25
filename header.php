@@ -24,7 +24,7 @@
           <div class="col-md-9">
             <div class="kitbase-nav-menu">
               <?php wp_nav_menu( array('theme_location' => 'main_menu', 'menu_id' => 'nav')); ?>
-                 <div class="mobile-menu">
+                 <div class="mobile-nav-menu">
                     <button class="menu-toggle">☰</button>
                     <div class="mobile-menu">
                         <?php wp_nav_menu(array('theme_location' => 'main_menu')); ?>

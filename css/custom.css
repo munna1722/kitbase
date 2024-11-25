@@ -38,8 +38,13 @@ body {
     float: right;
     width: 25%;
 }
+ /*
+ **** Category css
+ */
 
-
+ul.wp-block-categories-list.wp-block-categories {
+    display: inline-grid;
+}
 
   /*=======================================
    Header Area Style
@@ -155,9 +160,10 @@ li {
 
  /*   mobile menu   .............*/
 
- .kitbase-nav-menu .mobile-menu{
+ .kitbase-nav-menu .mobile-nav-menu{
     display: none;
  }
+
 
  /*=======================================
  Index Page Style
@@ -277,18 +283,49 @@ a.redmore:hover{
 
 
 /* blog page css */
-
-
-.post-details p {
-  
+.blog_area h1 {
+    background: #5C89A3;
+    text-align: center;
+    padding: 20px;
+    color: #ffffff;
     margin-bottom: 30px;
+    text-transform: capitalize;
+}
+
+.blog_area h1 a{
+    color: #ffffff;
+    text-transform: capitalize;
 }
 
 
+.post-details p {
+    margin-bottom: 30px;
+}
 
+/* blog Single page  */
+.wp-block-button__link {
+    background: #1abc9c;
+    color: #ffffff;
+    padding: 10px 28px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    border: none;
+}
 
+.wp-block-button__link:hover{
+    background: #77dbd6;
+    color: #262626
+}
 
-
+/* blog archive page  */
+.archive-area {
+    color: #68A77D;
+}
+.archive-area span {
+    color: #C56A08; 
+}
 
 
 

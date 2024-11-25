@@ -6,8 +6,8 @@ function kitbase_customize_register($wp_customize) {
         'priority'=> 30,
     ));
 
-    $wp_customize->add_setting('kitbase_layout_section', array(
-        'default'           => 'Default',
+    $wp_customize->add_setting('kitbase_layout_setting', array(
+        'default'           => 'default',
         'sanitize_callback' => 'kitbase_sanitize_layout',
     ));
 
