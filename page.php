@@ -1,4 +1,8 @@
-<?php get_header(); ?>
+<?php get_header(); 
+/*
+* The template for displaying pages
+*/
+ ?>
 
 <section>
   <div id="body_area">

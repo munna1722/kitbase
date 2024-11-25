@@ -319,7 +319,7 @@ a.redmore:hover{
     color: #262626
 }
 
-/* blog archive page  */
+/*  archive page  */
 .archive-area {
     color: #68A77D;
 }
@@ -327,9 +327,11 @@ a.redmore:hover{
     color: #C56A08; 
 }
 
+/*  Search page css  */
 
-
-
+.search-area {
+    color: #68A77D;
+}
 /* footer area css */
 
 .footer-area{
