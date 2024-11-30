@@ -21,6 +21,16 @@ body {
    height: 0 auto;
   }
   
+  /* tag css  */
+  p.wp-block-tag-cloud {
+    display: inline-grid;
+}
+
+.tag-cloud-link {
+    font-size: 18px !important;
+}
+
+
 
 /* theme layout  */
 
@@ -332,6 +342,26 @@ a.redmore:hover{
 .search-area {
     color: #68A77D;
 }
+
+
+/*  Error page css  */
+
+.error-area {
+    text-align: center;
+}
+
+.error-area h1 {
+    color: red;
+}
+#body_error_area {
+    background: aliceblue;
+    padding-top: 250px;
+    padding-bottom: 250px;
+}
+
+
+
+
 /* footer area css */
 
 .footer-area{
