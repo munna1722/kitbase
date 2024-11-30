@@ -4,7 +4,7 @@
 add_theme_support( 'title_tag' );
 
 
-add_theme_support( 'post-thumbnails', array('page', 'post') );
+add_theme_support( 'post-thumbnails', array('page', 'post', 'services') );
 add_image_size('post-thumbnails', 970, 350, true);
 
 

@@ -20,7 +20,10 @@ body {
     max-width: 100%;
    height: 0 auto;
   }
-  
+  ul.wp-block-categories-list.wp-block-categories {
+    padding: 0;
+}
+
   /* tag css  */
   p.wp-block-tag-cloud {
     display: inline-grid;

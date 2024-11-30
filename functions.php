@@ -27,9 +27,17 @@ include_once('inc/sidebar.php');
 //theme layout Register
 include_once('inc/theme-layout.php');
 
+//theme custom post 
+include_once('inc/custom-post.php');
+
+
+
 
 //theme layout Register
 include_once('inc/footer-widget.php');
+
+
+
 
 // //theme layout Register
 // include_once('inc/theme-color.php');
